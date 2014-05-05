@@ -61,6 +61,11 @@ snippet forr
 		${4:$1[$2]}
 	};
 
+snippet forin
+	for (${1:variable} in ${2:object}) {
+
+	};
+
 # while (...) {...}
 snippet wh
 	while (${1:/* condition */}) {
@@ -90,3 +95,22 @@ snippet get
 # Get Element
 snippet gett
 	getElementBy${1:Id}('${2}')${3}
+
+snippet exports
+	exports.${1} = function(${2}) {
+		${3}
+	};
+
+snippet it
+	it('should ${1}', function(${2:done}) {
+		${3}
+	});
+
+snippet req
+	require('${1}')${2}
+
+snippet desc
+	describe('${1:Thing}', function() {
+		${2}
+	});
+
